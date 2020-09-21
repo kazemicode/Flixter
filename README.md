@@ -23,7 +23,9 @@ Flixter is an app that allows users to browse movies from the [The Movie Databas
 <img src="/flixter.gif" width=250><br>
 
 ### Notes
-Describe any challenges encountered while building the app.
+* Had to request the secure base path instead of the base path for images from the API because the host server did not allow Cleartext HTTP traffic [related issue](https://stackoverflow.com/questions/45940861/android-8-cleartext-http-traffic-not-permitted).
+* Had to nest the Now Playing GET request inside of the onSuccess method of the Configurations GET request since the HTTP requests are Asynchronous. Otherwise, my attempt to get the base URL would come up null since we're not waiting for a response from one request until we send the second request. 
+
 
 ### Open-source libraries used
 
