@@ -5,6 +5,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.List;
 import java.util.ArrayList;
+import org.kazemicode.flixter.MainActivity;
+import android.util.Log;
 
 public class Movie {
     private String posterPath;
@@ -26,8 +28,8 @@ public class Movie {
     }
 
     /* Getters */
-    public String getPosterPath() {
-        return String.format("https://image.tmdb.org/t/p/w342/%s", posterPath);
+    public String getPosterPath()  {
+       return  MainActivity.baseUrl + MainActivity.posterSize + posterPath;
     }
 
     public String getTitle() {
