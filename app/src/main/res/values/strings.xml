@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Flixter</string>
+    <string name="a_spinoff_of_the_fate_of_the_furious">A spinoff of the Fate of the Furious</string>
+    <string name="movie_poster">movie poster</string>
 </resources>

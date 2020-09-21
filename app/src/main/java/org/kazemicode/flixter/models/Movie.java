@@ -12,11 +12,13 @@ public class Movie {
     private String posterPath;
     private String title;
     private String overview;
+    private String backdropPath;
 
     public Movie(JSONObject jsonObject) throws JSONException {
         posterPath = jsonObject.getString("poster_path");
         title = jsonObject.getString("title");
         overview = jsonObject.getString("overview");
+        backdropPath = jsonObject.getString("backdrop_path");
     }
 
     public static List<Movie> fromJsonArray(JSONArray movieJsonArray) throws JSONException {
@@ -38,5 +40,9 @@ public class Movie {
 
     public String getOverview() {
         return overview;
+    }
+
+    public String getBackdropPath(){
+        return MainActivity.baseUrl + MainActivity.posterSize + backdropPath;
     }
 }
