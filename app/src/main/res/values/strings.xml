@@ -4,4 +4,7 @@
     <string name="movie_poster">movie poster</string>
     <string name="mulan">Mulan</string>
     <string name="summary_goes_here_blah_blah">Summary goes here blah blah</string>
+    <string name="youtube_api_key">AIzaSyDpiTfq2KOdYLiyqtWv0XMQYUxT6DXCDwg</string>
+    <string name="tmdb_api_key">a07e22bc18f5cb106bfe4cc1f83ad8ed</string>
+    
 </resources>

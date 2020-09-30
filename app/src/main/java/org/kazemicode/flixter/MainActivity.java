@@ -23,8 +23,8 @@ import okhttp3.Headers;
 
 public class MainActivity extends AppCompatActivity {
     public static final String API_KEY = "a07e22bc18f5cb106bfe4cc1f83ad8ed";
-    public static final String NOW_PLAYING_URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=" + API_KEY;
-    public static final String CONFIGURATION_URL = "https://api.themoviedb.org/3/configuration?api_key=" + API_KEY;
+    public static final String NOW_PLAYING_URL = String.format("https://api.themoviedb.org/3/movie/now_playing?api_key=%s",  API_KEY);
+    public static final String CONFIGURATION_URL = String.format("https://api.themoviedb.org/3/configuration?api_key=%s", API_KEY);
     public static final String TAG = "MAIN_ACTIVITY";
     public static String baseUrl;
     public static String posterSize;
