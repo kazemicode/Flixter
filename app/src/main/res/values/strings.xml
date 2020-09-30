@@ -2,4 +2,6 @@
     <string name="app_name">Flixter</string>
     <string name="a_spinoff_of_the_fate_of_the_furious">A spinoff of the Fate of the Furious</string>
     <string name="movie_poster">movie poster</string>
+    <string name="mulan">Mulan</string>
+    <string name="summary_goes_here_blah_blah">Summary goes here blah blah</string>
 </resources>
